@@ -9,3 +9,6 @@ Like sleep but with a visual progress indicator and more explicit param names.
 
 ## Install
     cargo install sleep-interactive
+
+## Release/Publish to crates.io
+    cargo bump --git-tag && git push --tags
