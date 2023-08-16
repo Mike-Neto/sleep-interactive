@@ -1,10 +1,10 @@
-name: Rust CI CD
-
 on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+
+name: Rust CI CD
 
 env:
   CARGO_TERM_COLOR: always
