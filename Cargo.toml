@@ -1,0 +1,15 @@
+[package]
+name = "sleep-interactive"
+version = "0.1.0"
+edition = "2021"
+description = "A sleep like cli application that features a progress indicator and more meaningfull argument names"
+license = "MIT"
+repository = "https://github.com/Mike-Neto/sleep-interactive"
+keywords = ["sleep", "progress"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+indicatif = "0.17.3"
