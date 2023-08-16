@@ -1,6 +1,6 @@
 [package]
 name = "sleep-interactive"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "A sleep like cli application that features a progress indicator and more meaningfull argument names"
 license = "MIT"
