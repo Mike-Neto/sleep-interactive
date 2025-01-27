@@ -1,5 +1,5 @@
 //! sleep-interactive - Like sleep but with a visual progress indicator and more explicit param names.
-use clap::Parser;
+use clap::{ArgGroup, Parser};
 use core::time::Duration;
 use indicatif::ProgressBar;
 use std::thread::sleep;
@@ -7,6 +7,12 @@ use std::thread::sleep;
 /// Allowed arguments to be parsed by `clap`
 #[derive(Parser)]
 #[command(author, version, about)]
+#[clap(group(
+    ArgGroup::new("duration")
+        .required(true)
+        .multiple(true)
+        .args(&["seconds", "minutes"]),
+))]
 struct Args {
     /// Seconds to sleep for
     #[arg(short, long)]
