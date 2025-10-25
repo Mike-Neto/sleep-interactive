@@ -1,8 +1,8 @@
 [package]
 name = "sleep-interactive"
 version = "1.0.3"
-edition = "2021"
-description = "A sleep like cli application that features a progress indicator and more meaningfull argument names"
+edition = "2024"
+description = "A sleep like cli application that features a progress indicator and more meaningful argument names"
 license = "MIT"
 repository = "https://github.com/Mike-Neto/sleep-interactive"
 keywords = ["sleep", "progress"]
@@ -12,5 +12,5 @@ readme = "README.MD"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = { version = "4.5.27", features = ["derive"] }
-indicatif = "0.17.9"
+clap = { version = "4.5.48", features = ["derive"] }
+indicatif = "0.18.0"
