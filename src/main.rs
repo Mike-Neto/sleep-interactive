@@ -4,7 +4,7 @@ use core::time::Duration;
 use indicatif::ProgressBar;
 use std::thread::sleep;
 
-/// Allowed arguments to be parsed by `clap`
+/// Allowed arguments to be parsed by `clap`.
 #[derive(Parser)]
 #[command(author, version, about)]
 #[clap(group(
@@ -14,13 +14,13 @@ use std::thread::sleep;
         .args(&["seconds", "minutes"]),
 ))]
 struct Args {
-    /// Seconds to sleep for
-    #[arg(short, long)]
-    seconds: Option<u64>,
-
-    /// Minutes to sleep for
+    /// Minutes to sleep for.
     #[arg(short, long)]
     minutes: Option<u64>,
+
+    /// Seconds to sleep for.
+    #[arg(short, long)]
+    seconds: Option<u64>,
 }
 
 fn main() {

@@ -12,8 +12,8 @@ Like sleep but with a visual progress indicator and more explicit param names.
 
 ## Release/Publish to crates.io
 
-    cargo bump --git-tag && git add . && git commit --amend && git push --tags
+    cargo bump --git-tag && git add . && git commit --amend && git push --all
 
 ## All checks
 
-    cargo build && cargo test && cargo bench && cargo fmt --check && cargo doc && cargo clippy && cargo clippy --all -- -W clippy::all -W clippy::correctness -W clippy::suspicious -W clippy::style -W clippy::complexity -W clippy::perf -W clippy::pedantic -W clippy::nursery -W clippy::cargo
+    cargo build && cargo test && cargo bench && cargo fmt --check && cargo doc && cargo clippy
