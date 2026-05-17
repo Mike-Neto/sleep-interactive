@@ -12,7 +12,7 @@ Like sleep but with a visual progress indicator and more explicit param names.
 
 ## Release/Publish to crates.io
 
-    cargo bump --git-tag && git add . && git commit --amend && git push --all
+    cargo bump --git-tag && sleep 1 && git add . && git commit --amend && git push --all
 
 ## All checks
 
